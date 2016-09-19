@@ -42,27 +42,27 @@ public extension Collection {
 
 public extension Array where Element: Equatable {
     @discardableResult
-    mutating func remove(element: Element) -> Element? {
+    mutating public func remove(element: Element) -> Element? {
         return index(of: element).map { remove(at: $0) }
     }
     
-    mutating func remove(elements: [Element]) {
+    mutating public func remove(elements: [Element]) {
         elements.forEach { remove(element: $0) }
     }
     
-    func removed(element: Element) -> [Element] {
+    public func removed(element: Element) -> [Element] {
         var copied = self
         copied.remove(element: element)
         return copied
     }
     
-    func removed(elements: [Element]) -> [Element] {
+    public func removed(elements: [Element]) -> [Element] {
         var copied = self
         copied.remove(elements: elements)
         return copied
     }
     
-    func uniqued() -> [Element] {
+    public func uniqued() -> [Element] {
         var result: [Element] = []
         forEach {
             if !result.contains($0) {

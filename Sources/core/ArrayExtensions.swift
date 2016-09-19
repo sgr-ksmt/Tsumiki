@@ -40,6 +40,12 @@ public extension Collection {
     }
 }
 
+public extension Array {
+    public subscript(loop index: Index) -> Element {
+        return self[(index % endIndex + endIndex) % endIndex]
+    }
+}
+
 public extension Array where Element: Equatable {
     @discardableResult
     mutating public func remove(element: Element) -> Element? {

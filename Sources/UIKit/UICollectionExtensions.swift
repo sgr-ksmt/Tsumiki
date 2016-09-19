@@ -9,12 +9,12 @@
 import Foundation
 
 public extension UICollectionView {
-    public enum RegisterType {
+    public enum Register {
         case `class`
         case nib
     }
     
-    public func register<Cell: UICollectionViewCell>(type: RegisterType = .class, cellType: Cell.Type) {
+    public func register<Cell: UICollectionViewCell>(_ type: Register = .class, cellType: Cell.Type) where Cell: CellRegisterable {
         switch type {
         case .class:
             register(cellType, forCellWithReuseIdentifier: cellType.cellIdentifier)
@@ -35,7 +35,7 @@ public extension UICollectionView {
         }
     }
     
-    public func register<View: UICollectionReusableView>(type: RegisterType = .class, viewType: View.Type, of kind: Kind = .header) {
+    public func register<View: UICollectionReusableView>(_ type: Register = .class, viewType: View.Type, of kind: Kind = .header) {
         switch type {
         case .class:
             register(viewType, forSupplementaryViewOfKind: kind.value, withReuseIdentifier: viewType.className)
@@ -45,7 +45,7 @@ public extension UICollectionView {
         }
     }
     
-    public func dequeue<Cell: UICollectionViewCell>(cellType: Cell.Type, for indexPath: IndexPath) -> Cell {
+    public func dequeue<Cell: UICollectionViewCell>(cellType: Cell.Type, for indexPath: IndexPath) -> Cell where Cell: CellRegisterable {
         return dequeueReusableCell(withReuseIdentifier: cellType.cellIdentifier, for: indexPath) as! Cell
     }
     

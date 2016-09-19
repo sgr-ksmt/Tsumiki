@@ -8,9 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4D5959E81D8F8B2400DFB4AF /* Tsumiki.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D5959DE1D8F8B2400DFB4AF /* Tsumiki.framework */; };
-		4D595A011D8F8BD900DFB4AF /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4D5959FB1D8F8BD900DFB4AF /* Info.plist */; };
 		4D595A021D8F8BD900DFB4AF /* Tsumiki.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D5959FC1D8F8BD900DFB4AF /* Tsumiki.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4D595A031D8F8BD900DFB4AF /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4D5959FF1D8F8BD900DFB4AF /* Info.plist */; };
 		4D595A051D8F8C2C00DFB4AF /* TsumikiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D595A001D8F8BD900DFB4AF /* TsumikiTests.swift */; };
 		4D595A081D8F8C5A00DFB4AF /* TypeName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D595A071D8F8C5A00DFB4AF /* TypeName.swift */; };
 		4D595A0A1D8F972000DFB4AF /* NSObjectExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D595A091D8F972000DFB4AF /* NSObjectExtensions.swift */; };
@@ -241,8 +239,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D595A031D8F8BD900DFB4AF /* Info.plist in Resources */,
-				4D595A011D8F8BD900DFB4AF /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

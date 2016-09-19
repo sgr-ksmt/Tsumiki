@@ -9,8 +9,10 @@
 import Foundation
 import UIKit
 
-extension UICollectionViewCell: CellRegisterable {
+extension CellRegisterable where Self: UICollectionViewCell {
     public static var cellIdentifier: String {
         return self.className
     }
 }
+
+extension UICollectionViewCell: CellRegisterable {}

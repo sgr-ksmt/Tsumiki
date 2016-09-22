@@ -21,6 +21,8 @@
 		4D595A181D8FAC6400DFB4AF /* CellRegisterable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D595A171D8FAC6400DFB4AF /* CellRegisterable.swift */; };
 		4D595A1A1D8FC1CD00DFB4AF /* CGGeometryExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D595A191D8FC1CD00DFB4AF /* CGGeometryExtensions.swift */; };
 		4D595A1C1D8FCE4200DFB4AF /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D595A1B1D8FCE4200DFB4AF /* StringExtensions.swift */; };
+		4D71E86B1D93DA79002EAC17 /* Instantiatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D71E86A1D93DA79002EAC17 /* Instantiatable.swift */; };
+		4D71E86D1D93DCAC002EAC17 /* ViewControllerParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D71E86C1D93DCAC002EAC17 /* ViewControllerParameter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		4D595A171D8FAC6400DFB4AF /* CellRegisterable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellRegisterable.swift; sourceTree = "<group>"; };
 		4D595A191D8FC1CD00DFB4AF /* CGGeometryExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGGeometryExtensions.swift; sourceTree = "<group>"; };
 		4D595A1B1D8FCE4200DFB4AF /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		4D71E86A1D93DA79002EAC17 /* Instantiatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Instantiatable.swift; sourceTree = "<group>"; };
+		4D71E86C1D93DCAC002EAC17 /* ViewControllerParameter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerParameter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,9 +131,11 @@
 			isa = PBXGroup;
 			children = (
 				4D595A131D8FAB2600DFB4AF /* UICollectionExtensions.swift */,
+				4D71E86A1D93DA79002EAC17 /* Instantiatable.swift */,
 				4D595A151D8FABD300DFB4AF /* UICollectionViewCellExtensions.swift */,
 				4D595A171D8FAC6400DFB4AF /* CellRegisterable.swift */,
 				4D595A191D8FC1CD00DFB4AF /* CGGeometryExtensions.swift */,
+				4D71E86C1D93DCAC002EAC17 /* ViewControllerParameter.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -258,6 +264,8 @@
 			files = (
 				4D595A101D8FA8BD00DFB4AF /* DictionaryExtensions.swift in Sources */,
 				4D595A1A1D8FC1CD00DFB4AF /* CGGeometryExtensions.swift in Sources */,
+				4D71E86D1D93DCAC002EAC17 /* ViewControllerParameter.swift in Sources */,
+				4D71E86B1D93DA79002EAC17 /* Instantiatable.swift in Sources */,
 				4D595A141D8FAB2600DFB4AF /* UICollectionExtensions.swift in Sources */,
 				4D595A081D8F8C5A00DFB4AF /* TypeName.swift in Sources */,
 				4D595A0A1D8F972000DFB4AF /* NSObjectExtensions.swift in Sources */,

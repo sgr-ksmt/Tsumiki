@@ -7,21 +7,12 @@
 //
 
 import Foundation
+import UIKit
 
 public extension UICollectionView {
     public enum Register {
         case `class`
         case nib
-    }
-    
-    public func register<Cell: UICollectionViewCell>(_ type: Register, cellType: Cell.Type) where Cell: CellRegisterable {
-        switch type {
-        case .class:
-            register(cellType, forCellWithReuseIdentifier: cellType.cellIdentifier)
-        case .nib:
-            let nib = UINib.init(nibName: cellType.className, bundle: nil)
-            register(nib, forCellWithReuseIdentifier: cellType.cellIdentifier)
-        }
     }
     
     public enum Kind {
@@ -32,6 +23,16 @@ public extension UICollectionView {
             case .header: return UICollectionElementKindSectionHeader
             case .footer: return UICollectionElementKindSectionFooter
             }
+        }
+    }
+    
+    public func register<Cell: UICollectionViewCell>(_ type: Register, cellType: Cell.Type) where Cell: CellRegisterable {
+        switch type {
+        case .class:
+            register(cellType, forCellWithReuseIdentifier: cellType.cellIdentifier)
+        case .nib:
+            let nib = UINib.init(nibName: cellType.className, bundle: nil)
+            register(nib, forCellWithReuseIdentifier: cellType.cellIdentifier)
         }
     }
     

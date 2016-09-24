@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4D100ADA1D966DFB0081D47A /* DataExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D100AD91D966DFB0081D47A /* DataExtensions.swift */; };
+		4D100ADC1D96707F0081D47A /* UITableViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D100ADB1D96707F0081D47A /* UITableViewExtensions.swift */; };
 		4D5959E81D8F8B2400DFB4AF /* Tsumiki.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D5959DE1D8F8B2400DFB4AF /* Tsumiki.framework */; };
 		4D595A021D8F8BD900DFB4AF /* Tsumiki.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D5959FC1D8F8BD900DFB4AF /* Tsumiki.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4D595A051D8F8C2C00DFB4AF /* TsumikiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D595A001D8F8BD900DFB4AF /* TsumikiTests.swift */; };
@@ -24,6 +25,7 @@
 		4D595A1C1D8FCE4200DFB4AF /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D595A1B1D8FCE4200DFB4AF /* StringExtensions.swift */; };
 		4D71E86B1D93DA79002EAC17 /* Instantiatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D71E86A1D93DA79002EAC17 /* Instantiatable.swift */; };
 		4D71E86D1D93DCAC002EAC17 /* ViewControllerParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D71E86C1D93DCAC002EAC17 /* ViewControllerParameter.swift */; };
+		4D778A361D967D1100F58544 /* UITableViewCellExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D778A351D967D1100F58544 /* UITableViewCellExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,7 @@
 
 /* Begin PBXFileReference section */
 		4D100AD91D966DFB0081D47A /* DataExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataExtensions.swift; sourceTree = "<group>"; };
+		4D100ADB1D96707F0081D47A /* UITableViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewExtensions.swift; sourceTree = "<group>"; };
 		4D5959DE1D8F8B2400DFB4AF /* Tsumiki.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Tsumiki.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D5959E71D8F8B2400DFB4AF /* TsumikiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TsumikiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D5959FB1D8F8BD900DFB4AF /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -57,6 +60,7 @@
 		4D595A1B1D8FCE4200DFB4AF /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		4D71E86A1D93DA79002EAC17 /* Instantiatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Instantiatable.swift; sourceTree = "<group>"; };
 		4D71E86C1D93DCAC002EAC17 /* ViewControllerParameter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerParameter.swift; sourceTree = "<group>"; };
+		4D778A351D967D1100F58544 /* UITableViewCellExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewCellExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +143,8 @@
 				4D595A171D8FAC6400DFB4AF /* CellRegisterable.swift */,
 				4D595A191D8FC1CD00DFB4AF /* CGGeometryExtensions.swift */,
 				4D71E86C1D93DCAC002EAC17 /* ViewControllerParameter.swift */,
+				4D100ADB1D96707F0081D47A /* UITableViewExtensions.swift */,
+				4D778A351D967D1100F58544 /* UITableViewCellExtensions.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -265,6 +271,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D100ADC1D96707F0081D47A /* UITableViewExtensions.swift in Sources */,
 				4D595A101D8FA8BD00DFB4AF /* DictionaryExtensions.swift in Sources */,
 				4D595A1A1D8FC1CD00DFB4AF /* CGGeometryExtensions.swift in Sources */,
 				4D71E86D1D93DCAC002EAC17 /* ViewControllerParameter.swift in Sources */,
@@ -275,6 +282,7 @@
 				4D595A161D8FABD300DFB4AF /* UICollectionViewCellExtensions.swift in Sources */,
 				4D595A1C1D8FCE4200DFB4AF /* StringExtensions.swift in Sources */,
 				4D595A121D8FA90900DFB4AF /* IntExtensions.swift in Sources */,
+				4D778A361D967D1100F58544 /* UITableViewCellExtensions.swift in Sources */,
 				4D595A181D8FAC6400DFB4AF /* CellRegisterable.swift in Sources */,
 				4D100ADA1D966DFB0081D47A /* DataExtensions.swift in Sources */,
 				4D595A0C1D8F987700DFB4AF /* BundleExtensions.swift in Sources */,

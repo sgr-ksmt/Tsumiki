@@ -19,7 +19,7 @@ public extension Optional {
         return self ?? `else`()
     }
     
-    public func maybe<Other>(_ `default`: @autoclosure () -> Other, onSome: (Wrapped) -> Other) -> Other {
+    public func maybe<T>(_ `default`: @autoclosure () -> T, onSome: (Wrapped) -> T) -> T {
         return self.map(onSome) ?? `default`()
     }
 }

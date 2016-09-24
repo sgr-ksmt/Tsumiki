@@ -9,9 +9,17 @@
 import Foundation
 
 public extension Collection {
-    public subscript(safe index: Index) -> _Element? {
+    public subscript(safe index: Index) -> Iterator.Element? {
         return (startIndex..<endIndex) ~= index ? self[index] : nil
     }
+    
+    public subscript(safe bounds: Range<Index>) -> SubSequence? {
+        if distance(from: startIndex, to: bounds.lowerBound) >= 0 && distance(from: bounds.upperBound, to: endIndex) >= 0 {
+            return self[bounds]
+        }
+        return nil
+    }
+
     
     public func any(_ block: (Iterator.Element) -> Bool) -> Bool {
         for e in self {
@@ -40,8 +48,8 @@ public extension Collection {
     }
 }
 
-public extension Array {
-    public subscript(loop index: Index) -> Element {
+public extension Collection where Index == Int {
+    public subscript(loop index: Index) -> Iterator.Element {
         return self[(index % endIndex + endIndex) % endIndex]
     }
 }

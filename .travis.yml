@@ -14,7 +14,8 @@ branches:
   - "/^v?[0-9\\.]+/"
 script:
 - set -o pipefail
-- xcodebuild test -project "$TRAVIS_XCODE_PROJECT" -scheme "$TRAVIS_XCODE_SCHEME" -sdk iphonesimulator -destination "$DESTINATION" | xcpretty -c
+- xcodebuild test -project "$TRAVIS_XCODE_PROJECT" -scheme "$TRAVIS_XCODE_SCHEME"
+  -sdk iphonesimulator -destination "$DESTINATION" | xcpretty -c
 before_deploy:
 - carthage build --no-skip-current
 - carthage archive "$FRAMEWORK_NAME"
@@ -30,4 +31,4 @@ deploy:
 notifications:
   email: false
   slack:
-    secure: Z4S7jnJk1nesu1FK13218coFrEqBSI+P5ruDA9FNgU72A06fh/kRCLrBPJhjQGzQXR4n8kCONXC3SJULYWRivF8M/E2hox88j0+Ii5mzPIfUWD6WejXtJQ/yu9djq3TbXNoK0rCsAU4rkLnfYSYifgYayudW/ZjFjOWPmQ+SqYG5bTmTk501EU6uD6OcDrWpKUbA9neG2RJI3LRyiDNxwm+3XeNZJRlD/vhD1xnx4obv8T2yF+zr3rSL33LqP0aR2djjTGQhg67mWUiZTcbW6n+zJDI+BCB6ZsTs3itJObbgkvuOa1e25V4DXjcj5A5t4R564IJ/OjBePaC/GRo46Gm3enLEN71OXhEKjkQDZzorWOiEMo3GAJmQZmKsukSDu8iG6kfC07+4bVS3Qf4M7lIOJbRC2SwvycCfVJDT/uexG2yX5+bVYKBHBIx6w2dRDscoRsiQ6wbO2ZbSjzfUbVKmWDYSkopRQaA/rZ/GwAJDVMWINeGqhvnN6CPRBHa8rtd6XAmAhX+GQA1UCh6Cx6Bn2FyVdj+2kH/AoIjjMTv8itzCU9cPvLIBNMcQywjZkZoIbrHjmSa+I+KELSNRgkVUxgBNO2NnfiuxApjOjNN+iNmlZszsO74X+0Rq0/xiJizuISEz6LEEaozcV9DDsjNPc5WqkrZGhuqFLYpT86Y=
+    secure: h7550+Q9nKyUBx2EceX+GYxGQrPyOJZUM00omWfcMJ/XVknf7TTBfZjmGsLA5/sWuc0RJ6HDuhm7TybNpdzYkCwcRPftDIzaoRfIgG88WbrN8yYOhm7lIKUJdz6vakymVGRo1Nf7BPQLecpnKMviIDVaTg+lkB0D0GiBIZ+5pSZUPDPu4jOidjE5ukKe7HDe/7vWpsfGrPTDu52w55aEzOh097riZZgxMe6j3I7aSevVrHW4Z4nw62WnZAL8G2kylahM0+kufhbQVIvdmtkvaEORIv6jHVZeGU0Ek6Ny9Zag6q97/icc3Byj+Zf1K7q370PwrlsCh24ICMGhcFKC+XloONgg7LiXSai7PyorTHPZO5/OYyY4TnLkqLtfHUwDbVbu3PjE9W1M84kPKGitdy2LbinKD0zNVYucoqvLA3KcKytFu+jdgh88XLJHHCG1owPe7Sdhid0oqkHit9Phd7pnEcv2U1xhlhAVsofO5l38AuO3E9N2o/aql6ZnntTstZIkgeOYVwjPngkRv5d4Z/VJxysqL2rCFA+ctNXwdJt/DjA7HgwYJGhRavX2GQquy6oZQagMHB+seLbbBuvQw2NM7fncSaKukIrMIEYIj1mCRtNR8l7qnQ0D8Knhi2Lt1uYlkCHaH8f0SnCJdsjmwv26XYEvxHvDShX5BAr2q4U=

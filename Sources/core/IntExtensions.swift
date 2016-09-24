@@ -23,8 +23,16 @@ public extension Int {
         return !even
     }
 }
+
 public extension Int {
-    public func times(_ block: (Int) -> Void) {
-        (0..<Swift.max(0, self)).forEach(block)
+    public func times(_ body: (Int) -> Void) {
+        (0..<Swift.max(0, self)).forEach(body)
     }
 }
+
+public extension UInt {
+    public func times(_ body: (UInt) -> Void) {
+        (0..<self).forEach(body)
+    }
+}
+

@@ -177,5 +177,3 @@ public extension CGRect {
         self = rects.reduce(self) { $0.union($1) }
     }
 }
-
-

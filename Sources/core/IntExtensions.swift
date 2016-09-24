@@ -35,4 +35,3 @@ public extension UInt {
         (0..<self).forEach(body)
     }
 }
-

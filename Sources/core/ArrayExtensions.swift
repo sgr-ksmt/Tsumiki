@@ -49,6 +49,14 @@ public extension Collection {
 }
 
 public extension Collection where Index == Int {
+    public subscript(back index: Index) -> Iterator.Element {
+        return self[endIndex.advanced(by: -index)]
+    }
+    
+    public subscript(backsafe index: Index) -> Iterator.Element? {
+        let backIndex = endIndex.advanced(by: -index)
+        return self[safe: backIndex]
+    }
     public subscript(loop index: Index) -> Iterator.Element {
         return self[(index % endIndex + endIndex) % endIndex]
     }

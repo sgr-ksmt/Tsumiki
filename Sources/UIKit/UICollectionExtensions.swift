@@ -14,7 +14,7 @@ public extension UICollectionView {
         case nib
     }
     
-    public func register<Cell: UICollectionViewCell>(_ type: Register = .class, cellType: Cell.Type) where Cell: CellRegisterable {
+    public func register<Cell: UICollectionViewCell>(_ type: Register, cellType: Cell.Type) where Cell: CellRegisterable {
         switch type {
         case .class:
             register(cellType, forCellWithReuseIdentifier: cellType.cellIdentifier)
@@ -35,7 +35,7 @@ public extension UICollectionView {
         }
     }
     
-    public func register<View: UICollectionReusableView>(_ type: Register = .class, viewType: View.Type, of kind: Kind = .header) {
+    public func register<View: UICollectionReusableView>(_ type: Register, viewType: View.Type, of kind: Kind = .header) {
         switch type {
         case .class:
             register(viewType, forSupplementaryViewOfKind: kind.value, withReuseIdentifier: viewType.className)

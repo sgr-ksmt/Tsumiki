@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D100ADA1D966DFB0081D47A /* DataExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D100AD91D966DFB0081D47A /* DataExtensions.swift */; };
 		4D5959E81D8F8B2400DFB4AF /* Tsumiki.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D5959DE1D8F8B2400DFB4AF /* Tsumiki.framework */; };
 		4D595A021D8F8BD900DFB4AF /* Tsumiki.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D5959FC1D8F8BD900DFB4AF /* Tsumiki.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4D595A051D8F8C2C00DFB4AF /* TsumikiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D595A001D8F8BD900DFB4AF /* TsumikiTests.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4D100AD91D966DFB0081D47A /* DataExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataExtensions.swift; sourceTree = "<group>"; };
 		4D5959DE1D8F8B2400DFB4AF /* Tsumiki.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Tsumiki.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D5959E71D8F8B2400DFB4AF /* TsumikiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TsumikiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D5959FB1D8F8BD900DFB4AF /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 				4D595A0F1D8FA8BD00DFB4AF /* DictionaryExtensions.swift */,
 				4D595A111D8FA90900DFB4AF /* IntExtensions.swift */,
 				4D595A1B1D8FCE4200DFB4AF /* StringExtensions.swift */,
+				4D100AD91D966DFB0081D47A /* DataExtensions.swift */,
 			);
 			path = core;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 				4D595A1C1D8FCE4200DFB4AF /* StringExtensions.swift in Sources */,
 				4D595A121D8FA90900DFB4AF /* IntExtensions.swift in Sources */,
 				4D595A181D8FAC6400DFB4AF /* CellRegisterable.swift in Sources */,
+				4D100ADA1D966DFB0081D47A /* DataExtensions.swift in Sources */,
 				4D595A0C1D8F987700DFB4AF /* BundleExtensions.swift in Sources */,
 				4D595A0E1D8F991800DFB4AF /* ArrayExtensions.swift in Sources */,
 			);

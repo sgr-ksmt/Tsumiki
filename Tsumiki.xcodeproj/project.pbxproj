@@ -27,6 +27,7 @@
 		4D71E86D1D93DCAC002EAC17 /* ViewControllerParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D71E86C1D93DCAC002EAC17 /* ViewControllerParameter.swift */; };
 		4D778A361D967D1100F58544 /* UITableViewCellExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D778A351D967D1100F58544 /* UITableViewCellExtensions.swift */; };
 		4D778A381D967F7F00F58544 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D778A371D967F7F00F58544 /* UIViewExtensions.swift */; };
+		4D778A3A1D96803400F58544 /* OptionalExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D778A391D96803400F58544 /* OptionalExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		4D71E86C1D93DCAC002EAC17 /* ViewControllerParameter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerParameter.swift; sourceTree = "<group>"; };
 		4D778A351D967D1100F58544 /* UITableViewCellExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewCellExtensions.swift; sourceTree = "<group>"; };
 		4D778A371D967F7F00F58544 /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		4D778A391D96803400F58544 /* OptionalExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionalExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +125,7 @@
 				4D595A111D8FA90900DFB4AF /* IntExtensions.swift */,
 				4D595A1B1D8FCE4200DFB4AF /* StringExtensions.swift */,
 				4D100AD91D966DFB0081D47A /* DataExtensions.swift */,
+				4D778A391D96803400F58544 /* OptionalExtensions.swift */,
 			);
 			path = core;
 			sourceTree = "<group>";
@@ -281,6 +284,7 @@
 				4D71E86B1D93DA79002EAC17 /* Instantiatable.swift in Sources */,
 				4D595A141D8FAB2600DFB4AF /* UICollectionExtensions.swift in Sources */,
 				4D595A081D8F8C5A00DFB4AF /* TypeName.swift in Sources */,
+				4D778A3A1D96803400F58544 /* OptionalExtensions.swift in Sources */,
 				4D595A0A1D8F972000DFB4AF /* NSObjectExtensions.swift in Sources */,
 				4D595A161D8FABD300DFB4AF /* UICollectionViewCellExtensions.swift in Sources */,
 				4D595A1C1D8FCE4200DFB4AF /* StringExtensions.swift in Sources */,

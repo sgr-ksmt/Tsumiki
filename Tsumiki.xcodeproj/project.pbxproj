@@ -26,6 +26,7 @@
 		4D71E86B1D93DA79002EAC17 /* Instantiatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D71E86A1D93DA79002EAC17 /* Instantiatable.swift */; };
 		4D71E86D1D93DCAC002EAC17 /* ViewControllerParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D71E86C1D93DCAC002EAC17 /* ViewControllerParameter.swift */; };
 		4D778A361D967D1100F58544 /* UITableViewCellExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D778A351D967D1100F58544 /* UITableViewCellExtensions.swift */; };
+		4D778A381D967F7F00F58544 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D778A371D967F7F00F58544 /* UIViewExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		4D71E86A1D93DA79002EAC17 /* Instantiatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Instantiatable.swift; sourceTree = "<group>"; };
 		4D71E86C1D93DCAC002EAC17 /* ViewControllerParameter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerParameter.swift; sourceTree = "<group>"; };
 		4D778A351D967D1100F58544 /* UITableViewCellExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewCellExtensions.swift; sourceTree = "<group>"; };
+		4D778A371D967F7F00F58544 /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +147,7 @@
 				4D71E86C1D93DCAC002EAC17 /* ViewControllerParameter.swift */,
 				4D100ADB1D96707F0081D47A /* UITableViewExtensions.swift */,
 				4D778A351D967D1100F58544 /* UITableViewCellExtensions.swift */,
+				4D778A371D967F7F00F58544 /* UIViewExtensions.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -285,6 +288,7 @@
 				4D778A361D967D1100F58544 /* UITableViewCellExtensions.swift in Sources */,
 				4D595A181D8FAC6400DFB4AF /* CellRegisterable.swift in Sources */,
 				4D100ADA1D966DFB0081D47A /* DataExtensions.swift in Sources */,
+				4D778A381D967F7F00F58544 /* UIViewExtensions.swift in Sources */,
 				4D595A0C1D8F987700DFB4AF /* BundleExtensions.swift in Sources */,
 				4D595A0E1D8F991800DFB4AF /* ArrayExtensions.swift in Sources */,
 			);

@@ -26,7 +26,7 @@ public extension UICollectionView {
         }
     }
     
-    public func register<Cell: UICollectionViewCell>(_ type: Register, cellType: Cell.Type) where Cell: CellRegisterable {
+    public func register<C: UICollectionViewCell>(_ type: Register, cellType: C.Type) where C: CellRegisterable {
         switch type {
         case .class:
             register(cellType, forCellWithReuseIdentifier: cellType.cellIdentifier)
@@ -36,7 +36,7 @@ public extension UICollectionView {
         }
     }
     
-    public func register<View: UICollectionReusableView>(_ type: Register, viewType: View.Type, of kind: Kind = .header) {
+    public func register<V: UICollectionReusableView>(_ type: Register, viewType: V.Type, of kind: Kind) {
         switch type {
         case .class:
             register(viewType, forSupplementaryViewOfKind: kind.value, withReuseIdentifier: viewType.className)
@@ -46,15 +46,15 @@ public extension UICollectionView {
         }
     }
     
-    public func dequeue<Cell: UICollectionViewCell>(cellType: Cell.Type, for indexPath: IndexPath) -> Cell where Cell: CellRegisterable {
-        return dequeueReusableCell(withReuseIdentifier: cellType.cellIdentifier, for: indexPath) as! Cell
+    public func dequeue<C: UICollectionViewCell>(cellType: C.Type, for indexPath: IndexPath) -> C where C: CellRegisterable {
+        return dequeueReusableCell(withReuseIdentifier: cellType.cellIdentifier, for: indexPath) as! C
     }
     
-    public func dequeue<View: UICollectionReusableView>(viewType: View.Type, kind: Kind = .header, for indexPath: IndexPath) -> View {
-        return dequeueReusableSupplementaryView(ofKind: kind.value, withReuseIdentifier: viewType.className, for: indexPath) as! View
+    public func dequeue<V: UICollectionReusableView>(viewType: V.Type, of kind: Kind, for indexPath: IndexPath) -> V {
+        return dequeueReusableSupplementaryView(ofKind: kind.value, withReuseIdentifier: viewType.className, for: indexPath) as! V
     }
     
-    public func cellForItem<Cell: UICollectionViewCell>(at indexPath: IndexPath) -> Cell? {
-        return cellForItem(at: indexPath) as? Cell
+    public func cellForItem<C: UICollectionViewCell>(at indexPath: IndexPath) -> C? {
+        return cellForItem(at: indexPath) as? C
     }
 }

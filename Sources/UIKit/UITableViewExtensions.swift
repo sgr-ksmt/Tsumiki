@@ -15,7 +15,7 @@ public extension UITableView {
         case nib
     }
     
-    public func register<Cell: UITableViewCell>(_ type: Register, cellType: Cell.Type) where Cell: CellRegisterable {
+    public func register<C: UITableViewCell>(_ type: Register, cellType: C.Type) where C: CellRegisterable {
         switch type {
         case .class:
             register(cellType, forCellReuseIdentifier: cellType.cellIdentifier)
@@ -25,7 +25,7 @@ public extension UITableView {
         }
     }
     
-    public func register<View: UITableViewHeaderFooterView>(_ type: Register, viewType: View.Type) {
+    public func register<V: UITableViewHeaderFooterView>(_ type: Register, viewType: V.Type) {
         switch type {
         case .class:
             register(viewType, forHeaderFooterViewReuseIdentifier: viewType.className)
@@ -35,15 +35,15 @@ public extension UITableView {
         }
     }
     
-    public func dequeue<Cell: UITableViewCell>(cellType: Cell.Type, for indexPath: IndexPath) -> Cell where Cell: CellRegisterable {
-        return dequeueReusableCell(withIdentifier: cellType.cellIdentifier, for: indexPath) as! Cell
+    public func dequeue<C: UITableViewCell>(cellType: C.Type, for indexPath: IndexPath) -> C where C: CellRegisterable {
+        return dequeueReusableCell(withIdentifier: cellType.cellIdentifier, for: indexPath) as! C
     }
     
-    public func dequeue<View: UITableViewHeaderFooterView>(viewType: View.Type) -> View {
-        return dequeueReusableHeaderFooterView(withIdentifier: viewType.className) as! View
+    public func dequeue<V: UITableViewHeaderFooterView>(viewType: V.Type) -> V {
+        return dequeueReusableHeaderFooterView(withIdentifier: viewType.className) as! V
     }
     
-    public func cellForRow<Cell: UITableViewCell>(at indexPath: IndexPath) -> Cell? {
-        return cellForRow(at: indexPath) as? Cell
+    public func cellForRow<C: UITableViewCell>(at indexPath: IndexPath) -> C? {
+        return cellForRow(at: indexPath) as? C
     }
 }

@@ -31,6 +31,7 @@
 		4D778A3A1D96803400F58544 /* OptionalExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D778A391D96803400F58544 /* OptionalExtensions.swift */; };
 		4D778A3F1D96BCF300F58544 /* ComparableExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D778A3E1D96BCF300F58544 /* ComparableExtensions.swift */; };
 		4D778A411D96BDCA00F58544 /* General.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D778A401D96BDCA00F58544 /* General.swift */; };
+		4DEEDBBC1DEE768C0080DEAE /* BoolExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEEDBBB1DEE768C0080DEAE /* BoolExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		4D778A391D96803400F58544 /* OptionalExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionalExtensions.swift; sourceTree = "<group>"; };
 		4D778A3E1D96BCF300F58544 /* ComparableExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComparableExtensions.swift; sourceTree = "<group>"; };
 		4D778A401D96BDCA00F58544 /* General.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = General.swift; sourceTree = "<group>"; };
+		4DEEDBBB1DEE768C0080DEAE /* BoolExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoolExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +137,7 @@
 				4D778A3E1D96BCF300F58544 /* ComparableExtensions.swift */,
 				4D778A401D96BDCA00F58544 /* General.swift */,
 				4D433EA71DA7AB1F002B3315 /* Reflectable.swift */,
+				4DEEDBBB1DEE768C0080DEAE /* BoolExtensions.swift */,
 			);
 			path = core;
 			sourceTree = "<group>";
@@ -309,6 +312,7 @@
 				4D595A1A1D8FC1CD00DFB4AF /* CGGeometryExtensions.swift in Sources */,
 				4D71E86D1D93DCAC002EAC17 /* ViewControllerParameter.swift in Sources */,
 				4D71E86B1D93DA79002EAC17 /* Instantiatable.swift in Sources */,
+				4DEEDBBC1DEE768C0080DEAE /* BoolExtensions.swift in Sources */,
 				4D595A141D8FAB2600DFB4AF /* UICollectionExtensions.swift in Sources */,
 				4D595A081D8F8C5A00DFB4AF /* TypeName.swift in Sources */,
 				4D778A3A1D96803400F58544 /* OptionalExtensions.swift in Sources */,

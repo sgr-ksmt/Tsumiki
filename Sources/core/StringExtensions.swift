@@ -61,4 +61,8 @@ extension String {
     public func appendingPathExtension(_ str: String) -> String? {
         return ns.appendingPathExtension(str)
     }
+    
+    public func localized() -> String {
+        return NSLocalizedString(self, comment: "")
+    }
 }

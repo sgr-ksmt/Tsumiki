@@ -8,36 +8,41 @@
 
 import Foundation
 
-public protocol CGFloatType {
+public protocol CGFloatConvertible {
     var f: CGFloat { get }
 }
 
-extension Int: CGFloatType {
+extension Int: CGFloatConvertible {
     public var f: CGFloat {
         return CGFloat(self)
     }
 }
 
-extension Float: CGFloatType {
+extension Float: CGFloatConvertible {
     public var f: CGFloat {
         return CGFloat(self)
     }
 }
 
-extension Double: CGFloatType {
+extension Double: CGFloatConvertible {
     public var f: CGFloat {
         return CGFloat(self)
     }
 }
 
-extension CGFloat: CGFloatType {
+extension CGFloat: CGFloatConvertible {
     public var f: CGFloat {
         return self
     }
 }
 
 public extension CGPoint {
-    public init(_ x: CGFloatType, _ y: CGFloatType) {
+    
+    public init(size: CGSize) {
+        self.init(x: size.width, y: size.height)
+    }
+    
+    public init(_ x: CGFloatConvertible, _ y: CGFloatConvertible) {
         self.init(x: x.f, y: y.f)
     }
 
@@ -65,11 +70,11 @@ public extension CGPoint {
         lhs = lhs * rhs
     }
     
-    public static func * (point: CGPoint, scalar: CGFloatType) -> CGPoint {
+    public static func * (point: CGPoint, scalar: CGFloatConvertible) -> CGPoint {
         return CGPoint(point.x * scalar.f, point.y * scalar.f)
     }
     
-    public static func *= (point: inout CGPoint, scalar: CGFloatType) {
+    public static func *= (point: inout CGPoint, scalar: CGFloatConvertible) {
         point = point * scalar
     }
     
@@ -81,18 +86,23 @@ public extension CGPoint {
         lhs = lhs / rhs
     }
     
-    public static func / (point: CGPoint, scalar: CGFloatType) -> CGPoint {
+    public static func / (point: CGPoint, scalar: CGFloatConvertible) -> CGPoint {
         return CGPoint(point.x / scalar.f, point.y / scalar.f)
     }
     
-    public static func /= (point: inout CGPoint, scalar: CGFloatType) {
+    public static func /= (point: inout CGPoint, scalar: CGFloatConvertible) {
         point = point / scalar
     }
 }
 
 
 public extension CGSize {
-    public init(_ width: CGFloatType, _ height: CGFloatType) {
+    
+    public init(_ length: CGFloatConvertible) {
+        self.init(width: length.f, height: length.f)
+    }
+    
+    public init(_ width: CGFloatConvertible, _ height: CGFloatConvertible) {
         self.init(width: width.f, height: height.f)
     }
     
@@ -120,11 +130,11 @@ public extension CGSize {
         lhs = lhs * rhs
     }
     
-    public static func * (size: CGSize, scalar: CGFloatType) -> CGSize {
+    public static func * (size: CGSize, scalar: CGFloatConvertible) -> CGSize {
         return CGSize(size.width * scalar.f, size.height * scalar.f)
     }
     
-    public static func *= (size: inout CGSize, scalar: CGFloatType) {
+    public static func *= (size: inout CGSize, scalar: CGFloatConvertible) {
         size = size * scalar
     }
     
@@ -136,12 +146,16 @@ public extension CGSize {
         lhs = lhs / rhs
     }
     
-    public static func / (size: CGSize, scalar: CGFloatType) -> CGSize {
+    public static func / (size: CGSize, scalar: CGFloatConvertible) -> CGSize {
         return CGSize(size.width / scalar.f, size.height / scalar.f)
     }
     
-    public static func /= (size: inout CGSize, scalar: CGFloatType) {
+    public static func /= (size: inout CGSize, scalar: CGFloatConvertible) {
         size = size / scalar
+    }
+    
+    public var surfaceArea: CGFloat {
+        return width * height
     }
 }
 
@@ -149,7 +163,7 @@ public extension CGRect {
     public init(_ origin: CGPoint, _ size: CGSize) {
         self.init(origin: origin, size: size)
     }
-    public init(_ x: CGFloatType, _ y: CGFloatType, _ width: CGFloatType, _ height: CGFloatType) {
+    public init(_ x: CGFloatConvertible, _ y: CGFloatConvertible, _ width: CGFloatConvertible, _ height: CGFloatConvertible) {
         self.init(x: x.f, y: y.f, width: width.f, height: height.f)
     }
     

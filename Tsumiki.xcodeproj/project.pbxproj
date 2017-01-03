@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4D100ADA1D966DFB0081D47A /* DataExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D100AD91D966DFB0081D47A /* DataExtensions.swift */; };
 		4D100ADC1D96707F0081D47A /* UITableViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D100ADB1D96707F0081D47A /* UITableViewExtensions.swift */; };
+		4D3D1F921E1BE14100DDF4D4 /* UIScrollViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3D1F911E1BE14100DDF4D4 /* UIScrollViewExtensions.swift */; };
 		4D433EA81DA7AB1F002B3315 /* Reflectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D433EA71DA7AB1F002B3315 /* Reflectable.swift */; };
 		4D5959E81D8F8B2400DFB4AF /* Tsumiki.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D5959DE1D8F8B2400DFB4AF /* Tsumiki.framework */; };
 		4D595A021D8F8BD900DFB4AF /* Tsumiki.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D5959FC1D8F8BD900DFB4AF /* Tsumiki.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -47,6 +48,7 @@
 /* Begin PBXFileReference section */
 		4D100AD91D966DFB0081D47A /* DataExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataExtensions.swift; sourceTree = "<group>"; };
 		4D100ADB1D96707F0081D47A /* UITableViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewExtensions.swift; sourceTree = "<group>"; };
+		4D3D1F911E1BE14100DDF4D4 /* UIScrollViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIScrollViewExtensions.swift; sourceTree = "<group>"; };
 		4D433EA71DA7AB1F002B3315 /* Reflectable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reflectable.swift; sourceTree = "<group>"; };
 		4D5959DE1D8F8B2400DFB4AF /* Tsumiki.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Tsumiki.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D5959E71D8F8B2400DFB4AF /* TsumikiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TsumikiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -163,6 +165,7 @@
 				4D100ADB1D96707F0081D47A /* UITableViewExtensions.swift */,
 				4D778A351D967D1100F58544 /* UITableViewCellExtensions.swift */,
 				4D778A371D967F7F00F58544 /* UIViewExtensions.swift */,
+				4D3D1F911E1BE14100DDF4D4 /* UIScrollViewExtensions.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -316,6 +319,7 @@
 				4D595A141D8FAB2600DFB4AF /* UICollectionExtensions.swift in Sources */,
 				4D595A081D8F8C5A00DFB4AF /* TypeName.swift in Sources */,
 				4D778A3A1D96803400F58544 /* OptionalExtensions.swift in Sources */,
+				4D3D1F921E1BE14100DDF4D4 /* UIScrollViewExtensions.swift in Sources */,
 				4D595A0A1D8F972000DFB4AF /* NSObjectExtensions.swift in Sources */,
 				4D595A161D8FABD300DFB4AF /* UICollectionViewCellExtensions.swift in Sources */,
 				4D595A1C1D8FCE4200DFB4AF /* StringExtensions.swift in Sources */,

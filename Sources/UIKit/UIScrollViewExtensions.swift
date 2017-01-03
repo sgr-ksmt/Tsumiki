@@ -10,13 +10,6 @@ import Foundation
 import UIKit
 
 extension UIScrollView {
-    public enum ScrollDirection {
-        case top
-        case bottom
-        case left
-        case right
-    }
-    
     public func scrollToTop(_ animated: Bool) {
         let offset = CGPoint(x: contentOffset.x, y: -contentInset.top)
         setContentOffset(offset, animated: animated)

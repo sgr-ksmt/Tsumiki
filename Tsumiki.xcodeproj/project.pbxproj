@@ -21,13 +21,9 @@
 		4D595A101D8FA8BD00DFB4AF /* DictionaryExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D595A0F1D8FA8BD00DFB4AF /* DictionaryExtensions.swift */; };
 		4D595A121D8FA90900DFB4AF /* IntExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D595A111D8FA90900DFB4AF /* IntExtensions.swift */; };
 		4D595A141D8FAB2600DFB4AF /* UICollectionExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D595A131D8FAB2600DFB4AF /* UICollectionExtensions.swift */; };
-		4D595A161D8FABD300DFB4AF /* UICollectionViewCellExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D595A151D8FABD300DFB4AF /* UICollectionViewCellExtensions.swift */; };
-		4D595A181D8FAC6400DFB4AF /* CellRegisterable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D595A171D8FAC6400DFB4AF /* CellRegisterable.swift */; };
 		4D595A1A1D8FC1CD00DFB4AF /* CGGeometryExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D595A191D8FC1CD00DFB4AF /* CGGeometryExtensions.swift */; };
 		4D595A1C1D8FCE4200DFB4AF /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D595A1B1D8FCE4200DFB4AF /* StringExtensions.swift */; };
-		4D71E86B1D93DA79002EAC17 /* Instantiatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D71E86A1D93DA79002EAC17 /* Instantiatable.swift */; };
 		4D71E86D1D93DCAC002EAC17 /* ViewControllerParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D71E86C1D93DCAC002EAC17 /* ViewControllerParameter.swift */; };
-		4D778A361D967D1100F58544 /* UITableViewCellExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D778A351D967D1100F58544 /* UITableViewCellExtensions.swift */; };
 		4D778A381D967F7F00F58544 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D778A371D967F7F00F58544 /* UIViewExtensions.swift */; };
 		4D778A3A1D96803400F58544 /* OptionalExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D778A391D96803400F58544 /* OptionalExtensions.swift */; };
 		4D778A3F1D96BCF300F58544 /* ComparableExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D778A3E1D96BCF300F58544 /* ComparableExtensions.swift */; };
@@ -63,13 +59,9 @@
 		4D595A0F1D8FA8BD00DFB4AF /* DictionaryExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictionaryExtensions.swift; sourceTree = "<group>"; };
 		4D595A111D8FA90900DFB4AF /* IntExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntExtensions.swift; sourceTree = "<group>"; };
 		4D595A131D8FAB2600DFB4AF /* UICollectionExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICollectionExtensions.swift; sourceTree = "<group>"; };
-		4D595A151D8FABD300DFB4AF /* UICollectionViewCellExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICollectionViewCellExtensions.swift; sourceTree = "<group>"; };
-		4D595A171D8FAC6400DFB4AF /* CellRegisterable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellRegisterable.swift; sourceTree = "<group>"; };
 		4D595A191D8FC1CD00DFB4AF /* CGGeometryExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGGeometryExtensions.swift; sourceTree = "<group>"; };
 		4D595A1B1D8FCE4200DFB4AF /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
-		4D71E86A1D93DA79002EAC17 /* Instantiatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Instantiatable.swift; sourceTree = "<group>"; };
 		4D71E86C1D93DCAC002EAC17 /* ViewControllerParameter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerParameter.swift; sourceTree = "<group>"; };
-		4D778A351D967D1100F58544 /* UITableViewCellExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewCellExtensions.swift; sourceTree = "<group>"; };
 		4D778A371D967F7F00F58544 /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 		4D778A391D96803400F58544 /* OptionalExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionalExtensions.swift; sourceTree = "<group>"; };
 		4D778A3E1D96BCF300F58544 /* ComparableExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComparableExtensions.swift; sourceTree = "<group>"; };
@@ -157,13 +149,9 @@
 			isa = PBXGroup;
 			children = (
 				4D595A131D8FAB2600DFB4AF /* UICollectionExtensions.swift */,
-				4D71E86A1D93DA79002EAC17 /* Instantiatable.swift */,
-				4D595A151D8FABD300DFB4AF /* UICollectionViewCellExtensions.swift */,
-				4D595A171D8FAC6400DFB4AF /* CellRegisterable.swift */,
 				4D595A191D8FC1CD00DFB4AF /* CGGeometryExtensions.swift */,
 				4D71E86C1D93DCAC002EAC17 /* ViewControllerParameter.swift */,
 				4D100ADB1D96707F0081D47A /* UITableViewExtensions.swift */,
-				4D778A351D967D1100F58544 /* UITableViewCellExtensions.swift */,
 				4D778A371D967F7F00F58544 /* UIViewExtensions.swift */,
 				4D3D1F911E1BE14100DDF4D4 /* UIScrollViewExtensions.swift */,
 			);
@@ -314,21 +302,17 @@
 				4D595A101D8FA8BD00DFB4AF /* DictionaryExtensions.swift in Sources */,
 				4D595A1A1D8FC1CD00DFB4AF /* CGGeometryExtensions.swift in Sources */,
 				4D71E86D1D93DCAC002EAC17 /* ViewControllerParameter.swift in Sources */,
-				4D71E86B1D93DA79002EAC17 /* Instantiatable.swift in Sources */,
 				4DEEDBBC1DEE768C0080DEAE /* BoolExtensions.swift in Sources */,
 				4D595A141D8FAB2600DFB4AF /* UICollectionExtensions.swift in Sources */,
 				4D595A081D8F8C5A00DFB4AF /* TypeName.swift in Sources */,
 				4D778A3A1D96803400F58544 /* OptionalExtensions.swift in Sources */,
 				4D3D1F921E1BE14100DDF4D4 /* UIScrollViewExtensions.swift in Sources */,
 				4D595A0A1D8F972000DFB4AF /* NSObjectExtensions.swift in Sources */,
-				4D595A161D8FABD300DFB4AF /* UICollectionViewCellExtensions.swift in Sources */,
 				4D595A1C1D8FCE4200DFB4AF /* StringExtensions.swift in Sources */,
 				4D778A3F1D96BCF300F58544 /* ComparableExtensions.swift in Sources */,
 				4D433EA81DA7AB1F002B3315 /* Reflectable.swift in Sources */,
 				4D778A411D96BDCA00F58544 /* General.swift in Sources */,
 				4D595A121D8FA90900DFB4AF /* IntExtensions.swift in Sources */,
-				4D778A361D967D1100F58544 /* UITableViewCellExtensions.swift in Sources */,
-				4D595A181D8FAC6400DFB4AF /* CellRegisterable.swift in Sources */,
 				4D100ADA1D966DFB0081D47A /* DataExtensions.swift in Sources */,
 				4D778A381D967F7F00F58544 /* UIViewExtensions.swift in Sources */,
 				4D595A0C1D8F987700DFB4AF /* BundleExtensions.swift in Sources */,

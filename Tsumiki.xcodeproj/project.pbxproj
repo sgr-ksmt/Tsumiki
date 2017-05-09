@@ -185,7 +185,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4D5959F21D8F8B2400DFB4AF /* Build configuration list for PBXNativeTarget "Tsumiki" */;
 			buildPhases = (
-				4D778A3B1D9682C100F58544 /* swiftlint */,
 				4D5959D91D8F8B2400DFB4AF /* Sources */,
 				4D5959DA1D8F8B2400DFB4AF /* Frameworks */,
 				4D5959DB1D8F8B2400DFB4AF /* Headers */,
@@ -275,23 +274,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		4D778A3B1D9682C100F58544 /* swiftlint */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = swiftlint;
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null && [ -z ${CI+x} ]; then\n  swiftlint\nfi";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4D5959D91D8F8B2400DFB4AF /* Sources */ = {
